@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>오늘의 TODO</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <div class="eyebrow">FOCUS / TODAY</div>
+        <h1>오늘의 TODO</h1>
+        <p class="subtitle">작은 일부터 하나씩 끝내보세요.</p>
+
+        <form id="todo-form" class="add-form">
+          <input id="todo-input" type="text" maxlength="200" placeholder="새 할 일을 입력하세요" autocomplete="off" required />
+          <button type="submit">추가</button>
+        </form>
+
+        <div class="summary"><span id="count">0개의 할 일</span><span id="status"></span></div>
+        <ul id="todo-list" aria-live="polite"></ul>
+        <p id="empty" class="empty">아직 할 일이 없어요. 첫 번째 목표를 추가해보세요.</p>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

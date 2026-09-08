@@ -1,0 +1,19 @@
+{
+  "name": "todo-postgres-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A simple TODO app backed by PostgreSQL",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  }
+}
